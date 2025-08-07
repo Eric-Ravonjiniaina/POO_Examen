@@ -25,12 +25,14 @@ public class matchTest {
         }
         @Test
         public void combattant_exist(){
+            Combattant Tommy ;
             assertFalse(match.matchStart(Tommy, null));
-            assertFalse(match.matchStart(Tommy, Tommy))
+            assertFalse(match.matchStart(Tommy, Tommy));
         }
         @Test
         public void combattant_in_match(){
-            assertEquals("Tommy", setCombattant("John"));
+            Combattant John;
+            assertEquals("Tommy", setCombattant(John, Toavina));
         }
 
 }
